@@ -1,6 +1,11 @@
 import React from "react";
-import "./Wrapper.css";
 
-const Wrapper = props => <div className="wrapper">{props.children}</div>;
+const Navbar = props => (
+    <div className="navbar navbar-light bg-light">{props.children}
+        <div className="score"> High Score: {props.highScoreinNav} </div>
+        <div className="score"> Current Score: {props.currScoreinNav} </div>
+    </div>
 
-export default Wrapper;
+);
+
+export default Navbar;
